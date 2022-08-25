@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./js/script.js" defer type="module"></script>
+  </head>
+  <body>
+    <div class="alert-error">Insert only numbers!</div>
+
+    <div class="container">
+      <main class="card">
+        <form>
+          <h1 class="title">BMI Calculator</h1>
+          <div class="input-wrapper">
+            <label for="weight">Weight (Kg)</label>
+            <input placeholder="80" id="weight" type="text" />
+          </div>
+          <div class="input-wrapper">
+            <label for="height">Height (cm)</label>
+            <input placeholder="180" id="height" type="text" />
+          </div>
+
+          <button type="submit">Calculate!</button>
+        </form>
+      </main>
+    </div>
+
+    <div class="modal-wrapper">
+      <div class="modal card">
+        <h2 class="title">
+          <button class="close">x</button>
+          <span>Your BIM score: 28</span>
+        </h2>
+      </div>
+    </div>
+  </body>
+</html>
